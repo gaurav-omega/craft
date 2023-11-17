@@ -1,0 +1,52 @@
+.button {
+  background: rgb(255, 164, 0);
+  background: linear-gradient(
+    151deg,
+    rgba(255, 164, 0, 1) 0%,
+    rgba(255, 164, 0, 1) 24%,
+    rgba(249, 221, 175, 1) 100%
+  );
+  padding: 6px 3rem;
+  font-weight: 600;
+  border-radius: 1.2rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: rgb(255, 164, 0);
+  background: linear-gradient(
+    289deg,
+    rgba(255, 164, 0, 1) 0%,
+    rgba(255, 164, 0, 1) 24%,
+    rgba(249, 221, 175, 1) 100%
+  );
+}
+.button_secondary:hover {
+  cursor: pointer;
+  background: rgb(255, 164, 0);
+  
+}
+.button_secondary{
+  background: rgb(255, 164, 0);
+   
+  padding: 10px 8px;
+  border-radius: 8px;
+}
+.bg_primary {
+  background-color: #eaf6ff;
+}
+.bg_secondary {
+  background-color: #232528;
+}
+
+.txt_prime {
+  color: #eaf6ff;
+}
+.txt_sec {
+  color: #001121;
+}
+.button_color{
+  background-color: #0079ff;
+  padding: 10px 8px;
+  border-radius: 8px;
+}
