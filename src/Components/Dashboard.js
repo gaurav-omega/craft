@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Homeicon } from "./svg/Homeicon";
 import { Ordericon } from "./svg/Ordericon";
+import { Createorder } from "./svg/Createorder";
+import { Vieworder } from "./svg/Vieworder";
 
 const tabs = [
   { id: "dashboard", label: "Dashboard", icon: <Homeicon /> },
@@ -9,8 +11,8 @@ const tabs = [
     label: "Manage Orders",
     icon: <Ordericon />,
     subTabs: [
-      { id: "createOrder", label: "Create Order" },
-      { id: "viewOrders", label: "View Orders" },
+      { id: "createOrder", label: "Create Order", icon: <Createorder/> },
+      { id: "viewOrders", label: "View Orders", icon: <Vieworder/> },
     ],
   },
 ];
@@ -34,7 +36,7 @@ const Dashboard = () => {
         Craftlooms
       </div>
       <hr className="w-full" />
-      <div className="gap-1 flex flex-col text-lg font-semibold mt-6 px-4">
+      <div className=" flex flex-col text-lg font-semibold mt-6 px-4">
         {tabs.map((tab) => (
           <div
             key={tab.id}
@@ -49,22 +51,24 @@ const Dashboard = () => {
         ))}
 
         {activeTab === "manageOrders" && (
-          <div className="flex flex-col text-lg font-semibold mt-3 px-4">
+//{/* <div className="bg_subtab rounded-xl ml-[3.34rem] px-2 pb-8"> */}
+<div className="flex flex-col text-base font-semibold mt-2">
             {tabs
               .find((tab) => tab.id === "manageOrders")
               .subTabs.map((subTab) => (
                 <div
                   key={subTab.id}
-                  className={`flex items-center gap-x-2 list py-3 px-2 ml-4 active_b ${
-                    activeSubTab === subTab.id ? "button_active" : ""
+                  className={`flex items-center gap-x-2 list py-3 pl-2 px-8 active_b ml-auto mr-0 ${
+                    activeSubTab === subTab.id ? "subtab_active" : ""
                   } `}
                   onClick={() => handleSubTabClick(subTab.id)}
                 >
-                  <div className="mx-2">{/* Optionally add subTab.icon */}</div>
+                  <div className="mx-2">{subTab.icon}</div>
                   <div>{subTab.label}</div>
                 </div>
               ))}
           </div>
+// </div>
         )}
       </div>
     </div>
