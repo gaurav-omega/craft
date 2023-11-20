@@ -45,8 +45,19 @@
 .txt_sec {
   color: #001121;
 }
-.button_color{
-  background-color: #0079ff;
-  padding: 10px 8px;
+.active_b:hover{
+  z-index: 0;
+  cursor: pointer;
+  
   border-radius: 8px;
 }
+
+.button_active{
+  background-color: #0079ff ;
+  
+  border-radius: 8px;
+}
+.button_active:hover{
+  z-index: 4;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(54, 116, 167, 0.606), 0 6px 20px 0 rgba(38, 77, 113, 0.56) !important;}
