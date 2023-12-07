@@ -24,11 +24,10 @@
 .button_secondary:hover {
   cursor: pointer;
   background: rgb(255, 164, 0);
-  
 }
-.button_secondary{
+.button_secondary {
   background: rgb(255, 164, 0);
-   
+
   padding: 10px 8px;
   border-radius: 8px;
 }
@@ -45,32 +44,47 @@
 .txt_sec {
   color: #001121;
 }
-.active_b:hover{
+.active_b:hover {
   z-index: 0;
   cursor: pointer;
-  
+
   border-radius: 8px;
 }
 
-.button_active{
-  background: rgb(60,142,234);
-background: linear-gradient(180deg, rgba(60,142,234,1) 0%, rgba(0,121,255,1) 45%, rgba(60,142,234,1) 100%);border-radius: 8px;
-}
-.subtab_active{
-  background: rgb(60,142,234);
-  background: linear-gradient(180deg, rgba(60,142,234,1) 0%, rgba(0,179,255,1) 45%, rgba(60,142,234,1) 100%);  
+.button_active {
+  background: rgb(60, 142, 234);
+  background: linear-gradient(
+    180deg,
+    rgba(60, 142, 234, 1) 0%,
+    rgba(0, 121, 255, 1) 45%,
+    rgba(60, 142, 234, 1) 100%
+  );
   border-radius: 8px;
 }
-.button_active:hover{
+.subtab_active {
+  background: rgb(60, 142, 234);
+  background: linear-gradient(
+    180deg,
+    rgba(60, 142, 234, 1) 0%,
+    rgba(0, 121, 255, 1) 45%,
+    rgba(60, 142, 234, 1) 100%
+  );
+  border-radius: 8px;
+}
+.button_active:hover {
   z-index: 4;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(54, 116, 167, 0.606), 0 6px 20px 0 rgba(38, 77, 113, 0.56) !important;}
+  box-shadow: 0 4px 8px 0 rgba(54, 116, 167, 0.606),
+    0 6px 20px 0 rgba(38, 77, 113, 0.56) !important;
+}
 
-.subtab_active:hover{
+.subtab_active:hover {
   z-index: 4;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(54, 116, 167, 0.606), 0 6px 20px 0 rgba(38, 77, 113, 0.56) !important;}
+  box-shadow: 0 4px 8px 0 rgba(54, 116, 167, 0.606),
+    0 6px 20px 0 rgba(38, 77, 113, 0.56) !important;
+}
 
-  /* .bg_subtab{
+/* .bg_subtab{
     background-color:   #0b3963;
   } */

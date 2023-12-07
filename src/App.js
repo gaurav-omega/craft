@@ -6,11 +6,12 @@ import {
 } from "react-router-dom";
 
 
+
 import './App.css';
 
 import User from "./Components/User"
 import Dashboard from "./Components/Dashboard"
-
+import CreateOrder from "./Components/CreateOrder";
 
 function App() {
   return (
@@ -23,8 +24,12 @@ function App() {
   
           </Route>
           <Route path="/dashboard" element={<Dashboard/>}>
-  
+    
           </Route>
+          <Route path="/createOrder" element={<CreateOrder/>}>
+    
+          </Route>
+
         </Routes>
       </Router>
   );
