@@ -18,7 +18,7 @@ const tabs = [
   },
 ];
 
-const DashLeft = () => {
+const DashLeft = ({setCreateOrder}) => {
   const [activeTab, setActiveTab] = useState("dashboard");
   const [activeSubTab, setActiveSubTab] = useState(null);
 
@@ -29,7 +29,8 @@ const DashLeft = () => {
 
   const handleSubTabClick = (subTabId) => {
     setActiveSubTab(subTabId);
-   
+    if(subTabId === 'createOrder')
+    setCreateOrder(true);
   };
 
   return (

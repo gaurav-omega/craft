@@ -3,7 +3,7 @@ import React from 'react'
 export default function CreateOrder() {
   return (
     <div>
-      <div className="p-4 xl:ml-80 mt-[3rem]">
+      <div className="p-4 mt-[3rem] w-full  ">
        
       <div className="mt-12">
         <div className="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
