@@ -25,6 +25,7 @@ const DashLeft = ({setCreateOrder}) => {
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
     setActiveSubTab(null);
+    setCreateOrder(false);
   };
 
   const handleSubTabClick = (subTabId) => {
